@@ -1,4 +1,0 @@
-[upstream]
-	objectId = 6f7e929ea6ea557f107c8ccffea69a7d73439591
-	revision = refs/heads/scarthgap
-	url = https://git.yoctoproject.org/poky

@@ -1,0 +1,10 @@
+# This is a generated file by dfetch. Don't edit this, but edit the manifest.
+# For more info see https://dfetch.rtfd.io/en/latest/getting_started.html
+dfetch:
+  branch: scarthgap
+  hash: 7c0da100a8d41a2cf6bf0218f9a50dff
+  last_fetch: 21/02/2026, 16:55:45
+  patch: ''
+  remote_url: https://git.yoctoproject.org/poky
+  revision: 1d54d1c4736a114e1cecbe85a0306e3814d5ce70
+  tag: ''

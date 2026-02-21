@@ -1,4 +1,0 @@
-[subprojects]
-	path = sources/meta-openembedded
-	path = sources/meta-raspberrypi
-	path = sources/poky

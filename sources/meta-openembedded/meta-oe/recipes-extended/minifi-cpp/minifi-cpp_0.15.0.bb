@@ -29,6 +29,7 @@ SRC_URI = "git://github.com/apache/nifi-minifi-cpp.git;protocol=https;branch=mai
            file://0008-libsodium-aarch64_crypto.patch \
            file://systemd-volatile.conf \
            file://sysvinit-volatile.conf \
+           file://CVE-2025-6140.patch;patchdir=${S}/thirdparty/spdlog-src \
           "
 
 SRCREV = "9b55dc0c0f17a190f3e9ade87070a28faf542c25"
@@ -178,6 +179,10 @@ do_install() {
 
         sed -i "s|@MINIFI_LOG@|${MINIFI_LOG}|g" ${D}${sysconfdir}/default/volatiles/99_minifi
     fi
+    
+    for ss in $(find ${D}${libexecdir}/minifi-python -type f); do
+        sed -i 's,/usr/bin/env python$,/usr/bin/env python3,' "$ss"
+    done
 }
 
 pkg_postinst:${PN}() {

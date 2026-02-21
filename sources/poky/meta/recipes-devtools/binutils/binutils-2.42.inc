@@ -39,6 +39,10 @@ SRC_URI = "\
      file://0015-gprofng-change-use-of-bignum-to-bigint.patch \
      file://0016-CVE-2024-53589.patch \
      file://0017-dlltool-file-name-too-long.patch \
+     file://0018-opcodes-fix-std-gnu23-compatibility-wrt-static_assert.patch \
+     file://0019-Fix-32097-Warnings-when-building-gprofng-with-Clang.patch \
+     file://0020-gprofng-fix-std-gnu23-compatibility-wrt-unprototyped.patch \
+     file://0021-gprofng-fix-build-with-std-gnu23.patch \
      file://0018-CVE-2025-0840.patch \
      file://CVE-2025-1176.patch \
      file://CVE-2025-1178.patch \
@@ -55,5 +59,15 @@ SRC_URI = "\
      file://0022-CVE-2025-5244.patch \
      file://0023-CVE-2025-7546.patch \
      file://0023-CVE-2025-7545.patch \
+     file://0024-CVE-2025-11082.patch \
+     file://0025-CVE-2025-11083.patch \
+     file://0026-CVE-2025-11081.patch \
+     file://0027-CVE-2025-8225.patch \
+     file://CVE-2025-11414.patch \
+     file://CVE-2025-11412.patch \
+     file://CVE-2025-11413.patch \
+     file://0028-CVE-2025-11494.patch \
+     file://0029-CVE-2025-11839.patch \
+     file://0030-CVE-2025-11840.patch \
 "
 S  = "${WORKDIR}/git"

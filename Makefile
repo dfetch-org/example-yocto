@@ -2,15 +2,14 @@
 
 SHELL=bash
 
-#SUBPATCH=$(HOME)/git/subpatch/subpatch.py
-SUBPATCH=subpatch
+DFETCH=dfetch
 
 .PHONY: add
 add:
 	mkdir -p sources
-	cd sources && $(SUBPATCH) add https://git.yoctoproject.org/poky -r refs/heads/scarthgap
-	cd sources && $(SUBPATCH) add https://git.openembedded.org/meta-openembedded -r refs/heads/scarthgap
-	cd sources && $(SUBPATCH) add https://git.yoctoproject.org/meta-raspberrypi -r refs/heads/scarthgap
+	cd sources && $(DFETCH) add https://git.yoctoproject.org/poky -r refs/heads/scarthgap
+	cd sources && $(DFETCH) add https://git.openembedded.org/meta-openembedded -r refs/heads/scarthgap
+	cd sources && $(DFETCH) add https://git.yoctoproject.org/meta-raspberrypi -r refs/heads/scarthgap
 	git commit -m "add layers"
 
 
@@ -43,13 +42,13 @@ build:
 
 .PHONY: update
 update:
-	$(SUBPATCH) update sources/poky
-	$(SUBPATCH) update sources/meta-openembedded
-	$(SUBPATCH) update sources/meta-raspberrypi
+	$(DFETCH) update sources/poky
+	$(DFETCH) update sources/meta-openembedded
+	$(DFETCH) update sources/meta-raspberrypi
 
 
 .PHONY: upgrade
 upgrade:
-	$(SUBPATCH) update -r styhead sources/poky
-	$(SUBPATCH) update -r styhead sources/meta-openembedded
-	$(SUBPATCH) update -r styhead sources/meta-raspberrypi
+	$(DFETCH) update -f sources/poky
+	$(DFETCH) update -f sources/meta-openembedded
+	$(DFETCH) update -f sources/meta-raspberrypi

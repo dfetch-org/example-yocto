@@ -1,4 +1,0 @@
-[upstream]
-	objectId = e8fd97d86af86cdcc5a6eb3f301cbaf6a2084943
-	revision = refs/heads/scarthgap
-	url = https://git.openembedded.org/meta-openembedded

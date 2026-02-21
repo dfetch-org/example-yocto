@@ -1,0 +1,10 @@
+# This is a generated file by dfetch. Don't edit this, but edit the manifest.
+# For more info see https://dfetch.rtfd.io/en/latest/getting_started.html
+dfetch:
+  branch: scarthgap
+  hash: 47821bba75010456dbd6ace0d5e8bd12
+  last_fetch: 21/02/2026, 16:56:32
+  patch: ''
+  remote_url: https://git.openembedded.org/meta-openembedded
+  revision: ec0469748be4159fb83fb0fa0148d786484c88cf
+  tag: ''

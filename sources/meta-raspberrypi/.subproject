@@ -1,4 +1,0 @@
-[upstream]
-	objectId = 3afc9728b1f4ba0f5be1af34883d6582966133a1
-	revision = refs/heads/scarthgap
-	url = https://git.yoctoproject.org/meta-raspberrypi

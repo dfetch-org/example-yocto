@@ -1,0 +1,22 @@
+manifest:
+  version: 0.0
+
+  remotes:
+  - name: yoctoproject
+    url-base: https://git.yoctoproject.org/
+
+  projects:
+  - name: meta-openembedded
+    dst: sources/meta-openembedded
+    url: https://git.openembedded.org/meta-openembedded
+    branch: scarthgap
+
+  - name: meta-raspberrypi
+    dst: sources/meta-raspberrypi
+    repo-path: meta-raspberrypi
+    branch: scarthgap
+
+  - name: poky
+    dst: sources/poky
+    repo-path: poky
+    branch: scarthgap

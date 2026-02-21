@@ -1,6 +1,6 @@
-# subpatch Yocto example
+# Dfetch Yocto example
 
-This repository is part of the [subpatch project](https://subpatch.net).
+This repository is part of the [dfetch project](https://dfetch.rtfd.io/).
 
 ## Contents
 
@@ -10,10 +10,10 @@ The superproject uses three subprojects
 * sources/meta-raspberrypi
 * sources/poky
 
-See also `subpatch list`.
+See also `dfetch report`.
 
-For now the layers are tracking the upstream `scarthgap`  branch. See `subpatch
-status` for more details.
+For now the layers are tracking the upstream `scarthgap`  branch. See `dfetch
+check` for more details.
 
 The local directory `sources/meta-mylayer` is a project local layer and it
 contains the default build configuration.
@@ -72,5 +72,5 @@ the image `my-image`.
 
 ## Final words
 
-Congratulations. You have seen and used a project that uses subpatch to
+Congratulations. You have seen and used a project that uses dfetch to
 assemble a Yocto project.
